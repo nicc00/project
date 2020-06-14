@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        header{
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        #dropdownlinks{
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 5;
+            background-color: #f1f1f1;
+        }
+        #dropdownlinks a{
+            padding: 12px 16px;
+            display: block;
+            z-index: 5;
+        }
+        #dropdown:hover #dropdownlinks{
+            display: block;
+        }
+        #spacing{
+            width: 1400px;
+            display: inline-block;
+        }
+        footer{
+            text-align: center;
+            position: fixed;
+            bottom: 0px;
+            height: 30px;
+            width: 100%;
+
+        }
+        img{
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">The Movie Place</a></h1>
+        <div id="dropdown">
+            <button id="dropdownbutton">Hamburger menu</button>
+            <div id="dropdownlinks">
+                <a href="movies.html">Movies</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div id="spacing">
+
+        </div>
+        <a href="contact.html"><button>Contact</button></a>
+    </header>
+    <div>
+       <a href="lahaine.html"><img src="lahaine2.jpg" alt="La Haine"></a>
+       <a href="snatch.html"><img src="snatch.jpeg" alt="Snatch"></a>
+       <a href="cityofgod.html"><img src="cityofgod.jpg" alt="City of God"></a>
+
+    </div>
+    <footer>
+        <button>Sitemap</button> 
+    </footer>
+</body>
+</html>
