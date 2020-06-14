@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
     <style>
-          header{
+        header{
             display: block;
             text-align: center;
             margin-bottom: 20px;
@@ -29,14 +29,23 @@
         #dropdown:hover #dropdownlinks{
             display: block;
         }
+        #spacing{
+            width: 1400px;
+            display: inline-block;
+        }
+        footer{
+            text-align: center;
+        }
         #poster{
             max-width: 200px;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+      
         }
         #posterlist{
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
         }
     </style>
 </head>
@@ -50,24 +59,37 @@
                 <a href="contact.html">Contact</a>
             </div>
         </div>
+        <div id="spacing">
+
+        </div>
         <a href="contact.html"><button>Contact</button></a>
     </header>
     <div>
-        <div id="posterlist">
-            <a href="lahaine.html">
-                <img id="poster" src="lahaineposter.jpg" alt="La Haine poster">
-                La Haine
-            </a>
-            <a href="snatch.html">
-                <img id="poster" src="snatchposter.jpg" alt="Snatch poster">
-                Snatch
-            </a>
-            <a href="cityofgod.html">
-                <img id="poster" src="cityofgodposter.jpg" alt="City of God poster">
-                City of God
-            </a>
-            
-        </div>
+        <table id="posterlist">
+            <tr>
+                <td><a href="lahaine.html"> La Haine</a></td>
+                <td><a href="lahaine.html"><img id="poster" src="lahaineposter.jpg" alt="La Haine poster" title="La Haine"></a></td>
+            </tr>
+            <tr>
+                <td><a href="snatch.html"> Snatch</a></td>
+                <td><a href="snatch.html"><img id="poster" src="snatchposter.jpg" alt="Snatch poster" title="Snatch"></a></td>
+            </tr>
+            <tr>
+                <td><a href="cityofgod.html"> City of God</a></td>
+                <td><a href="cityofgod.html"><img id="poster" src="cityofgodposter.jpg" alt="City of God poster" title="City of God"></a></td>
+            </tr>
+        </table>
     </div>
+    <div>
+        <form action="">
+            <fieldset>
+                <legend>Recommend me a movie:</legend>
+                <input type="text">
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <a href="sitemap.html">Site Map</a>
+    </footer>
 </body>
 </html>
