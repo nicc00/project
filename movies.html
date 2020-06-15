@@ -4,65 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat">
     <style>
-        header{
-            display: block;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        #dropdown{
-            position: relative;
-            display: inline-block;
-        }
-        #dropdownlinks{
-            display: none;
-            position: absolute;
-            min-width: 160px;
-            z-index: 5;
-            background-color: #f1f1f1;
-        }
-        #dropdownlinks a{
-            padding: 12px 16px;
-            display: block;
-            z-index: 5;
-        }
-        #dropdown:hover #dropdownlinks{
-            display: block;
-        }
-        #spacing{
-            width: 1400px;
-            display: inline-block;
-        }
-        footer{
-            text-align: center;
-        }
         #poster{
             max-width: 200px;
             display: block;
-      
         }
         #posterlist{
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-
+        }
+        form{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a:hover{
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1><a href="index.html">The Movie Place</a></h1>
         <div id="dropdown">
-            <button id="dropdownbutton">Hamburger menu</button>
+            <button id="dropdownbutton">more</button>
             <div id="dropdownlinks">
-                <a href="movies.html">Movies</a>
-                <a href="contact.html">Contact</a>
+                <a href="movies.html">movies</a>
+                <a href="contact.html">contact</a>
             </div>
         </div>
         <div id="spacing">
+        <h1><a href="index.html">the movie place</a></h1>
 
         </div>
-        <a href="contact.html"><button>Contact</button></a>
+        <a href="contact.html"><button>contact</button></a>
     </header>
     <div>
         <table id="posterlist">
@@ -82,14 +63,12 @@
     </div>
     <div>
         <form action="">
-            <fieldset>
-                <legend>Recommend me a movie:</legend>
-                <input type="text">
-            </fieldset>
+                <label for="recommend">Recommend me a movie:</label>
+                <input id="recommend" type="text">
         </form>
     </div>
     <footer>
-        <a href="sitemap.html">Site Map</a>
+        <a href="sitemap.html">site map</a>
     </footer>
 </body>
 </html>

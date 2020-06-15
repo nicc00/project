@@ -4,72 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="body.css">
+
     <style>
-        header{
-            display: block;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        #dropdown{
-            position: relative;
-            display: inline-block;
-        }
-        #dropdownlinks{
-            display: none;
-            position: absolute;
-            min-width: 160px;
-            z-index: 5;
-            background-color: #252525;
-        }
-        #dropdownlinks a{
-            padding: 12px 16px;
-            display: block;
-            z-index: 5;
-        }
-        #dropdown:hover #dropdownlinks{
-            display: block;
-        }
-        #spacing{
-            width: 1400px;
-            display: inline-block;
-        }
-        footer{
-            text-align: center;
-        }
         img{
             max-width: 1600px;
             margin-left: auto;
             margin-right: auto;
             display: block;
-        }
-        body{
-            background-color: black;
-            color: white;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-            transition: ease .6s;
-        }
-        a:hover{
-            background-color: darkgray;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1><a href="index.html">The Movie Place</a></h1>
         <div id="dropdown">
-            <button id="dropdownbutton">Hamburger menu</button>
+            <button id="dropdownbutton">more</button>
             <div id="dropdownlinks">
-                <a href="movies.html">Movies</a>
-                <a href="contact.html">Contact</a>
+                <a href="movies.html">movies</a>
+                <a href="contact.html">contact</a>
             </div>
         </div>
         <div id="spacing">
+        <h1><a href="index.html">the movie place</a></h1>
 
         </div>
-        <a href="contact.html"><button>Contact</button></a>
+        <a href="contact.html"><button>contact</button></a>
     </header>
     <div>
        <a href="lahaine.html"><img src="lahaine2.jpg" alt="La Haine" title="La Haine"></a>
@@ -78,7 +41,7 @@
 
     </div>
     <footer>
-        <a href="sitemap.html">Site Map</a>
+        <a href="sitemap.html">site map</a>
     </footer>
 </body>
 </html>

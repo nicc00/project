@@ -4,35 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Haine</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat">
     <style>
-         header{
-            display: block;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        #dropdown{
-            position: relative;
-            display: inline-block;
-        }
-        #dropdownlinks{
-            display: none;
-            position: absolute;
-            min-width: 160px;
-            z-index: 5;
-            background-color: #f1f1f1;
-        }
-        #dropdownlinks a{
-            padding: 12px 16px;
-            display: block;
-            z-index: 5;
-        }
-        #dropdown:hover #dropdownlinks{
-            display: block;
-        }
-        #spacing{
-            width: 1400px;
-            display: inline-block;
-        }
         footer{
             text-align: center;
         }
@@ -47,28 +23,48 @@
             margin-left: auto;
             margin-right: auto;
         }
+        table{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #wtw{
+            border: 1px solid white;
+        }
+        #photolist{
+            text-align: center;
+        }
+        #photolist img{
+            width: 1400px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1><a href="index.html">The Movie Place</a></h1>
         <div id="dropdown">
-            <button id="dropdownbutton">Hamburger menu</button>
+            <button id="dropdownbutton">more</button>
             <div id="dropdownlinks">
-                <a href="movies.html">Movies</a>
-                <a href="contact.html">Contact</a>
+                <a href="movies.html">movies</a>
+                <a href="contact.html">contact</a>
             </div>
         </div>
         <div id="spacing">
+        <h1><a href="index.html">the movie place</a></h1>
 
         </div>
-        <a href="contact.html"><button>Contact</button></a>
+        <a href="contact.html"><button>contact</button></a>
     </header>
-    <div>
-        <h1>La Haine</h1>
-    </div>
+
     <div>
         <img id="bigpic" src="lahaine2.jpg" alt="La Haine" title="La Haine">
+    </div>
+    <div>
+        <h1>La Haine</h1>
+        <hr>
     </div>
     <div>
         Categories: Crime, Drama
@@ -76,13 +72,11 @@
     <div>
         <table>
             <tr>
-                <td></td>
                 <td>IMDB</td>
                 <td>Rotten Tomatoes Critic</td>
                 <td>Rotten Tomatoes Audience</td>
             </tr>
             <tr>
-                <td>Rating</td>
                 <td>8.1/10</td>
                 <td>100%</td>
                 <td>95%</td>
@@ -94,14 +88,21 @@
             Ways to watch:
         </div>
         <div>
-            <a href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.c4a9f713-f124-b0fc-5761-a767326cb168?ref_=imdbref_tt_wbr_pvt_aiv&tag=imdbtag_tt_wbr_pvt_aiv-20" target="_blank">Purchase on Amazon</a>
+            <a id="wtw" href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.c4a9f713-f124-b0fc-5761-a767326cb168?ref_=imdbref_tt_wbr_pvt_aiv&tag=imdbtag_tt_wbr_pvt_aiv-20" target="_blank">Purchase on Amazon</a>
         </div>
     </div>
     <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/M2Wl4li8TFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <div id="photolist">
+        <div>
+            more pictures
+        </div>
+        <img src="lahaine3.jpeg" alt="La Haine" title="La Haine">
+        <img src="lahaine4.jpg" alt="La Haine" title="La Haine">
+    </div>
     <footer>
-        <a href="sitemap.html">Site Map</a>
+        <a href="sitemap.html">site map</a>
     </footer>
 </body>
 </html>
