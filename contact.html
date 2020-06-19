@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="body.css">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Montserrat">
-    <style>
-    </style>
-</head>
-<body>
-    <header>
-        <div id="dropdown">
-            <button id="dropdownbutton">more</button>
-            <div id="dropdownlinks">
-                <a href="movies.html">movies</a>
-                <a href="contact.html">contact</a>
-            </div>
-        </div>
-        <div id="spacing">
-        <h1><a href="index.html">the movie place</a></h1>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="body.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <style></style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169802484-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "UA-169802484-1");
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="dropdown">
+        <button id="dropdownbutton">more</button>
+        <div id="dropdownlinks">
+          <a href="movies.html">movies</a>
+          <a href="contact.html">contact</a>
         </div>
-        <a href="contact.html"><button>contact</button></a>
+      </div>
+      <div id="spacing">
+        <h1><a href="index.html">the movie place</a></h1>
+      </div>
+      <a href="contact.html"><button>contact</button></a>
     </header>
+    <div>Creator contact: <a href="mailto:ncort1@babson.edu">Nic Cort</a></div>
     <div>
-        Creator contact: <a href="mailto:ncort1@babson.edu">Nic Cort</a>
-    </div>
-    <div>
-        <form action="">
-            <fieldset>
-                <legend>Feedback:</legend>
-                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>           
-            </fieldset>
-        </form>
+      <form action="">
+        <fieldset>
+          <legend>Feedback:</legend>
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+      </form>
     </div>
     <footer>
-        <a href="sitemap.html">site map</a>
+      <a href="sitemap.html">site map</a>
     </footer>
-</body>
+  </body>
 </html>

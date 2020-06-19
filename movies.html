@@ -1,74 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movies</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="body.css">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="body.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
     <style>
-        #poster{
-            max-width: 200px;
-            display: block;
-        }
-        #posterlist{
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        form{
-            margin-top: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        table a:hover{
-            text-decoration: underline;
-        }
+      #poster {
+        max-width: 200px;
+        display: block;
+      }
+      #posterlist {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <div id="dropdown">
-            <button id="dropdownbutton">more</button>
-            <div id="dropdownlinks">
-                <a href="movies.html">movies</a>
-                <a href="contact.html">contact</a>
-            </div>
-        </div>
-        <div id="spacing">
-        <h1><a href="index.html">the movie place</a></h1>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169802484-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "UA-169802484-1");
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="dropdown">
+        <button id="dropdownbutton">more</button>
+        <div id="dropdownlinks">
+          <a href="movies.html">movies</a>
+          <a href="contact.html">contact</a>
         </div>
-        <a href="contact.html"><button>contact</button></a>
+      </div>
+      <div id="spacing">
+        <h1><a href="index.html">the movie place</a></h1>
+      </div>
+      <a href="contact.html"><button>contact</button></a>
     </header>
     <div>
-        <table id="posterlist">
-            <tr>
-                <td><a href="lahaine.html"> La Haine</a></td>
-                <td><a href="lahaine.html"><img id="poster" src="lahaineposter.jpg" alt="La Haine poster" title="La Haine"></a></td>
-            </tr>
-            <tr>
-                <td><a href="snatch.html"> Snatch</a></td>
-                <td><a href="snatch.html"><img id="poster" src="snatchposter.jpg" alt="Snatch poster" title="Snatch"></a></td>
-            </tr>
-            <tr>
-                <td><a href="cityofgod.html"> City of God</a></td>
-                <td><a href="cityofgod.html"><img id="poster" src="cityofgodposter.jpg" alt="City of God poster" title="City of God"></a></td>
-            </tr>
-        </table>
+      <table id="posterlist">
+        <tr>
+          <td><a href="lahaine.html"> La Haine</a></td>
+          <td>
+            <a href="lahaine.html"
+              ><img
+                id="poster"
+                src="lahaineposter.jpg"
+                alt="La Haine poster"
+                title="La Haine"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="snatch.html"> Snatch</a></td>
+          <td>
+            <a href="snatch.html"
+              ><img
+                id="poster"
+                src="snatchposter.jpg"
+                alt="Snatch poster"
+                title="Snatch"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="cityofgod.html"> City of God</a></td>
+          <td>
+            <a href="cityofgod.html"
+              ><img
+                id="poster"
+                src="cityofgodposter.jpg"
+                alt="City of God poster"
+                title="City of God"
+            /></a>
+          </td>
+        </tr>
+      </table>
     </div>
     <div>
-        <form action="">
-                <label for="recommend">Recommend me a movie:</label>
-                <input id="recommend" type="text">
-        </form>
+      <form action="">
+        <label for="recommend">Recommend me a movie:</label>
+        <input id="recommend" type="text" />
+      </form>
     </div>
     <footer>
-        <a href="sitemap.html">site map</a>
+      <a href="sitemap.html">site map</a>
     </footer>
-</body>
+  </body>
 </html>
