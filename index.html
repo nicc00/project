@@ -10,14 +10,19 @@
     />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
-
+    <link rel="stylesheet" href="footer.css" />
     <style>
       img {
-        max-width: 1300px;
+        width: 1200px;
+        margin-bottom: 10px;
+      }
+      img:hover{
+        transform: scale(1.01);
+            }
+      #homepageimages {
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        display: block;
-        margin-bottom: 10px;
       }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,29 +42,33 @@
   </head>
   <body>
     <header>
-      <div id="dropdown">
-        <button id="dropdownbutton">more</button>
-        <div id="dropdownlinks">
+      <div class="dropdown">
+        <button class="dropdownbutton">more</button>
+        <div class="dropdownlinks">
           <a href="movies.html">movies</a>
           <a href="contact.html">contact</a>
         </div>
       </div>
-      <div id="spacing">
+      <div class="title">
         <h1><a href="index.html">the movie place</a></h1>
       </div>
-      <a href="contact.html"><button>contact</button></a>
+      <div class="contact">
+        <a href="contact.html"><button>contact</button></a>
+      </div>
     </header>
-    <div>
-      <a href="lahaine.html"
-        ><img src="lahaine2.jpg" alt="La Haine" title="La Haine"
-      /></a>
-      <a href="snatch.html"
-        ><img src="snatch.jpeg" alt="Snatch" title="Snatch"
-      /></a>
-      <a href="cityofgod.html"
-        ><img src="cityofgod.jpg" alt="City of God" title="City of God"
-      /></a>
-    </div>
+    <section class="body">
+      <div id="homepageimages">
+        <a href="lahaine.html"
+          ><img src="lahaine2.jpg" alt="La Haine" title="La Haine"
+        /></a>
+        <a href="snatch.html"
+          ><img src="snatch.jpeg" alt="Snatch" title="Snatch"
+        /></a>
+        <a href="cityofgod.html"
+          ><img src="cityofgod.jpg" alt="City of God" title="City of God"
+        /></a>
+      </div>
+    </section>
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>

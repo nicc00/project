@@ -6,6 +6,7 @@
     <title>Movies</title>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat"
@@ -48,64 +49,68 @@
   </head>
   <body>
     <header>
-      <div id="dropdown">
-        <button id="dropdownbutton">more</button>
-        <div id="dropdownlinks">
+      <div class="dropdown">
+        <button class="dropdownbutton">more</button>
+        <div class="dropdownlinks">
           <a href="movies.html">movies</a>
           <a href="contact.html">contact</a>
         </div>
       </div>
-      <div id="spacing">
+      <div class="title">
         <h1><a href="index.html">the movie place</a></h1>
       </div>
-      <a href="contact.html"><button>contact</button></a>
+      <div class="contact">
+        <a href="contact.html"><button>contact</button></a>
+      </div>
     </header>
-    <div>
-      <table id="posterlist">
-        <tr>
-          <td><a href="lahaine.html"> La Haine</a></td>
-          <td>
-            <a href="lahaine.html"
-              ><img
-                id="poster"
-                src="lahaineposter.jpg"
-                alt="La Haine poster"
-                title="La Haine"
-            /></a>
-          </td>
-        </tr>
-        <tr>
-          <td><a href="snatch.html"> Snatch</a></td>
-          <td>
-            <a href="snatch.html"
-              ><img
-                id="poster"
-                src="snatchposter.jpg"
-                alt="Snatch poster"
-                title="Snatch"
-            /></a>
-          </td>
-        </tr>
-        <tr>
-          <td><a href="cityofgod.html"> City of God</a></td>
-          <td>
-            <a href="cityofgod.html"
-              ><img
-                id="poster"
-                src="cityofgodposter.jpg"
-                alt="City of God poster"
-                title="City of God"
-            /></a>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div>
-      <form action="">
-        <label for="recommend">Recommend me a movie:</label>
-        <input id="recommend" type="text" />
-      </form>
-    </div>
+    <section class="body">
+      <div>
+        <table id="posterlist">
+          <tr>
+            <td><a href="lahaine.html"> La Haine</a></td>
+            <td>
+              <a href="lahaine.html"
+                ><img
+                  id="poster"
+                  src="lahaineposter.jpg"
+                  alt="La Haine poster"
+                  title="La Haine"
+              /></a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="snatch.html"> Snatch</a></td>
+            <td>
+              <a href="snatch.html"
+                ><img
+                  id="poster"
+                  src="snatchposter.jpg"
+                  alt="Snatch poster"
+                  title="Snatch"
+              /></a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="cityofgod.html"> City of God</a></td>
+            <td>
+              <a href="cityofgod.html"
+                ><img
+                  id="poster"
+                  src="cityofgodposter.jpg"
+                  alt="City of God poster"
+                  title="City of God"
+              /></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <form action="">
+          <label for="recommend">Recommend me a movie:</label>
+          <input id="recommend" type="text" />
+        </form>
+      </div>
+    </section>
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>

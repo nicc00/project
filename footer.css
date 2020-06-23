@@ -1,0 +1,13 @@
+footer{
+    text-align: center;
+    font-family: Montserrat;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    padding: 2px 5px 3px 5px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+}

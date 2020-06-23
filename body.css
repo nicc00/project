@@ -2,8 +2,13 @@ body{
     background-color: black;
     color: white;
     font-family: Montserrat;
+    position: relative;
 }
 a{
     text-decoration: none;
     color: white;
+}
+.body{
+    margin-top: 90px;
+    padding-bottom: 30px;
 }

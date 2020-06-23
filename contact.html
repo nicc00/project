@@ -6,6 +6,8 @@
     <title>Contact</title>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="footer.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat"
@@ -28,32 +30,38 @@
   </head>
   <body>
     <header>
-      <div id="dropdown">
-        <button id="dropdownbutton">more</button>
-        <div id="dropdownlinks">
+      <div class="dropdown">
+        <button class="dropdownbutton">more</button>
+        <div class="dropdownlinks">
           <a href="movies.html">movies</a>
           <a href="contact.html">contact</a>
         </div>
       </div>
-      <div id="spacing">
+      <div class="title">
         <h1><a href="index.html">the movie place</a></h1>
       </div>
-      <a href="contact.html"><button>contact</button></a>
+      <div class="contact">
+        <a href="contact.html"><button>contact</button></a>
+      </div>
     </header>
-    <div>Creator contact: <a href="mailto:ncort1@babson.edu">Nic Cort</a></div>
-    <div>
-      <form action="">
-        <fieldset>
-          <legend>Feedback:</legend>
-          <textarea
-            name="feedback"
-            id="feedback"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </fieldset>
-      </form>
-    </div>
+    <section class="body">
+      <div>
+        Creator contact: <a href="mailto:ncort1@babson.edu">Nic Cort</a>
+      </div>
+      <div>
+        <form action="">
+          <fieldset>
+            <legend>Feedback:</legend>
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+        </form>
+      </div>
+    </section>
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>
