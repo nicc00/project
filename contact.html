@@ -10,7 +10,7 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
     />
     <style></style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,6 +27,35 @@
 
       gtag("config", "UA-169802484-1");
     </script>
+    <style>
+      #contact:hover {
+        background-color: rgb(57, 57, 57);
+      }
+      #send{
+        background-color: black;
+        color: white;
+        border: solid white 1px;
+        outline: none;
+      }
+      #send:hover{
+        cursor: pointer;
+        background-color: rgb(57, 57, 57);
+      }
+      input{
+        margin-bottom: 5px;
+      }
+      form{
+        text-align: center;
+      }
+      #form{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .body{
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -38,7 +67,7 @@
         </div>
       </div>
       <div class="title">
-        <h1><a href="index.html">the movie place</a></h1>
+        <h1><a href="index.html">the film collection</a></h1>
       </div>
       <div class="contact">
         <a href="contact.html"><button>contact</button></a>
@@ -46,18 +75,33 @@
     </header>
     <section class="body">
       <div>
-        Creator contact: <a href="mailto:ncort1@babson.edu">Nic Cort</a>
+        Creator contact:
+        <a id="contact" href="mailto:ncort1@babson.edu">Nic Cort</a>
       </div>
-      <div>
+      <div id="form">
         <form action="">
           <fieldset>
             <legend>Feedback:</legend>
-            <textarea
-              name="feedback"
-              id="feedback"
-              cols="30"
-              rows="10"
-            ></textarea>
+            <div>
+              <label for="name">Your name:</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div>
+              <label for="email">Your email:</label>
+              <input type="text" name="email" id="email">
+            </div>
+            <div>
+              <textarea
+                name="feedback"
+                id="feedback"
+                cols="30"
+                rows="10"
+                placeholder="enter your feedback here..."
+              ></textarea>
+            </div>
+            <div>
+              <button id="send">Send feedback</button>
+            </div>
           </fieldset>
         </form>
       </div>

@@ -9,14 +9,11 @@
     <link rel="stylesheet" href="footer.css" />
 
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-    />
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
+  />
     <style>
-      footer {
-        text-align: center;
-      }
-      #bigpic {
+      .bigpic {
         max-width: 1400px;
         display: block;
         margin-left: auto;
@@ -36,17 +33,54 @@
         padding-left: 20px;
         padding-right: 20px;
       }
-      #wtw {
-        border: 1px solid white;
+      .wtw {
+        /* border: 1px solid white; */
+        border-radius: 5px;
       }
-      #photolist {
+      .wtw:hover{
+        background-color: rgb(57, 57, 57);
+      }
+      #waystowatch{
         text-align: center;
       }
-      #photolist img {
-        width: 1400px;
+      .photolist {
+        text-align: center;
       }
-      #title {
-        border-bottom: 1px solid white;
+      .extrapic {
+        width: 1400px;
+        display: none;
+      }
+      .filmtitle {
+        font-family: Playfair Display;
+        font-style: italic;
+      }
+      .heading {
+        border-bottom: 1px solid rgb(57, 57, 57);
+      }
+      #morepictures{
+        margin: 10px auto 10px auto;
+        width: 150px;   
+        border: 1px solid white;
+     
+      }
+      #morepictures:hover{
+        background-color: rgb(57, 57, 57);
+        cursor: pointer;
+      }
+      #trailer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      td a:hover{
+        background-color: rgb(57, 57, 57);
+        border-radius: 5px;
+      }
+      #purchase{
+        font-size: 10px;
+      }
+      #purchase:hover{
+        background-color: rgb(57, 57, 57);
+        border-radius: 5px;
       }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -74,7 +108,7 @@
         </div>
       </div>
       <div class="title">
-        <h1><a href="index.html">the movie place</a></h1>
+        <h1><a href="index.html">the film collection</a></h1>
       </div>
       <div class="contact">
         <a href="contact.html"><button>contact</button></a>
@@ -82,10 +116,15 @@
     </header>
     <section class="body">
       <div>
-        <img id="bigpic" src="lahaine2.jpg" alt="La Haine" title="La Haine" />
+        <img
+          class="bigpic"
+          src="images/lahaine2.jpg"
+          alt="La Haine"
+          title="La Haine"
+        />
       </div>
       <div>
-        <h1 id="title">La Haine</h1>
+        <h1 class="heading"><span class="filmtitle">La Haine </span><span id="purchase"><a target="_blank" href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.c4a9f713-f124-b0fc-5761-a767326cb168?ref_=imdbref_tt_wbr_pvt_aiv&tag=imdbtag_tt_wbr_pvt_aiv-20">Purchase on Amazon</a></span></h1>
       </div>
       <div>
         Categories: Crime, Drama
@@ -93,9 +132,9 @@
       <div>
         <table>
           <tr>
-            <td>IMDB</td>
-            <td>Rotten Tomatoes Critic</td>
-            <td>Rotten Tomatoes Audience</td>
+            <td><a target="_blank" href="https://www.imdb.com/title/tt0113247/">IMDB</a></td>
+            <td><a target="_blank" href="https://www.rottentomatoes.com/m/la_haine">Rotten Tomatoes Critic</a></td>
+            <td><a target="_blank" href="https://www.rottentomatoes.com/m/la_haine">Rotten Tomatoes Audience</a></td>
           </tr>
           <tr>
             <td>8.1/10</td>
@@ -104,20 +143,20 @@
           </tr>
         </table>
       </div>
-      <div>
+      <!-- <div id="waystowatch">
         <div>
           Ways to watch:
         </div>
         <div>
           <a
-            id="wtw"
+            class="wtw"
             href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.c4a9f713-f124-b0fc-5761-a767326cb168?ref_=imdbref_tt_wbr_pvt_aiv&tag=imdbtag_tt_wbr_pvt_aiv-20"
             target="_blank"
             >Purchase on Amazon</a
           >
         </div>
-      </div>
-      <div>
+      </div> -->
+      <div id="trailer">
         <iframe
           width="560"
           height="315"
@@ -127,16 +166,43 @@
           allowfullscreen
         ></iframe>
       </div>
-      <div id="photolist">
-        <div>
+     
+      <div class="photolist">
+        <div id="morepictures">
           more pictures
         </div>
-        <img src="lahaine3.jpeg" alt="La Haine" title="La Haine" />
-        <img src="lahaine4.jpg" alt="La Haine" title="La Haine" />
+        <div id="extrapics">
+          <img
+            id="extrapic1"
+            class="extrapic"
+            src="images/lahaine3.jpeg"
+            alt="La Haine"
+            title="La Haine"
+          />
+          <img
+            id="extrapic2"
+            class="extrapic"
+            src="images/lahaine4.jpg"
+            alt="La Haine"
+            title="La Haine"
+          />
+        </div>
       </div>
     </section>
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>
+    <script>
+      function morepictures() {
+        if ((document.getElementById("extrapic1").style.display === "inline")) {
+          document.getElementById("extrapic1").style.display = "none";
+          document.getElementById("extrapic2").style.display = "none";
+        } else {
+          document.getElementById("extrapic1").style.display = "inline";
+          document.getElementById("extrapic2").style.display = "inline";
+        }
+      }
+      document.getElementById("morepictures").onclick = morepictures;
+    </script>
   </body>
 </html>
