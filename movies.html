@@ -7,10 +7,34 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
     <link rel="stylesheet" href="footer.css" />
+    <meta
+      name="description"
+      content="the film collection is a collection of my favorite films. The goal of the site is to provide a little bit a visual teaser of each film to promote it."
+    />
+    <meta
+      name="keywords"
+      content="movie,movies,film,films,La Haine,Snatch,City of God"
+    />
+    <meta name="author" content="Nic Cort" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169802484-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-169802484-1");
+    </script>
     <style>
       #poster {
         max-width: 200px;
@@ -31,24 +55,10 @@
       table a:hover {
         text-decoration: underline;
       }
-      img:hover{
+      img:hover {
         transform: scale(1.05);
-            }
-    </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-169802484-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-
-      gtag("config", "UA-169802484-1");
-    </script>
+    </style>
   </head>
   <body>
     <header>
@@ -57,10 +67,11 @@
         <div class="dropdownlinks">
           <a href="movies.html">movies</a>
           <a href="contact.html">contact</a>
+          <a href="credits.html">credits</a>
         </div>
       </div>
       <div class="title">
-        <h1><a href="index.html">the movie place</a></h1>
+        <h1><a href="index.html">the film collection</a></h1>
       </div>
       <div class="contact">
         <a href="contact.html"><button>contact</button></a>

@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Haine</title>
+    <meta
+      name="description"
+      content="the film collection is a collection of my favorite films. The goal of the site is to provide a little bit a visual teaser of each film to promote it."
+    />
+    <meta
+      name="keywords"
+      content="movie,movies,film,films,La Haine,Snatch,City of God"
+    />
+    <meta name="author" content="Nic Cort" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
     <link rel="stylesheet" href="footer.css" />
 
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
-  />
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
+    />
     <style>
       .bigpic {
         max-width: 1400px;
@@ -37,10 +46,10 @@
         /* border: 1px solid white; */
         border-radius: 5px;
       }
-      .wtw:hover{
+      .wtw:hover {
         background-color: rgb(57, 57, 57);
       }
-      #waystowatch{
+      #waystowatch {
         text-align: center;
       }
       .photolist {
@@ -57,28 +66,27 @@
       .heading {
         border-bottom: 1px solid rgb(57, 57, 57);
       }
-      #morepictures{
+      #morepictures {
         margin: 10px auto 10px auto;
-        width: 150px;   
+        width: 150px;
         border: 1px solid white;
-     
       }
-      #morepictures:hover{
+      #morepictures:hover {
         background-color: rgb(57, 57, 57);
         cursor: pointer;
       }
-      #trailer{
+      #trailer {
         margin-top: 20px;
         margin-bottom: 20px;
       }
-      td a:hover{
+      td a:hover {
         background-color: rgb(57, 57, 57);
         border-radius: 5px;
       }
-      #purchase{
+      #purchase {
         font-size: 10px;
       }
-      #purchase:hover{
+      #purchase:hover {
         background-color: rgb(57, 57, 57);
         border-radius: 5px;
       }
@@ -105,6 +113,7 @@
         <div class="dropdownlinks">
           <a href="movies.html">movies</a>
           <a href="contact.html">contact</a>
+          <a href="credits.html">credits</a>
         </div>
       </div>
       <div class="title">
@@ -124,7 +133,16 @@
         />
       </div>
       <div>
-        <h1 class="heading"><span class="filmtitle">La Haine </span><span id="purchase"><a target="_blank" href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.c4a9f713-f124-b0fc-5761-a767326cb168?ref_=imdbref_tt_wbr_pvt_aiv&tag=imdbtag_tt_wbr_pvt_aiv-20">Purchase on Amazon</a></span></h1>
+        <h1 class="heading">
+          <span class="filmtitle">La Haine </span
+          ><span id="purchase"
+            ><a
+              target="_blank"
+              href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.c4a9f713-f124-b0fc-5761-a767326cb168?ref_=imdbref_tt_wbr_pvt_aiv&tag=imdbtag_tt_wbr_pvt_aiv-20"
+              >Purchase on Amazon</a
+            ></span
+          >
+        </h1>
       </div>
       <div>
         Categories: Crime, Drama
@@ -132,9 +150,25 @@
       <div>
         <table>
           <tr>
-            <td><a target="_blank" href="https://www.imdb.com/title/tt0113247/">IMDB</a></td>
-            <td><a target="_blank" href="https://www.rottentomatoes.com/m/la_haine">Rotten Tomatoes Critic</a></td>
-            <td><a target="_blank" href="https://www.rottentomatoes.com/m/la_haine">Rotten Tomatoes Audience</a></td>
+            <td>
+              <a target="_blank" href="https://www.imdb.com/title/tt0113247/"
+                >IMDB</a
+              >
+            </td>
+            <td>
+              <a
+                target="_blank"
+                href="https://www.rottentomatoes.com/m/la_haine"
+                >Rotten Tomatoes Critic</a
+              >
+            </td>
+            <td>
+              <a
+                target="_blank"
+                href="https://www.rottentomatoes.com/m/la_haine"
+                >Rotten Tomatoes Audience</a
+              >
+            </td>
           </tr>
           <tr>
             <td>8.1/10</td>
@@ -143,19 +177,6 @@
           </tr>
         </table>
       </div>
-      <!-- <div id="waystowatch">
-        <div>
-          Ways to watch:
-        </div>
-        <div>
-          <a
-            class="wtw"
-            href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.c4a9f713-f124-b0fc-5761-a767326cb168?ref_=imdbref_tt_wbr_pvt_aiv&tag=imdbtag_tt_wbr_pvt_aiv-20"
-            target="_blank"
-            >Purchase on Amazon</a
-          >
-        </div>
-      </div> -->
       <div id="trailer">
         <iframe
           width="560"
@@ -166,7 +187,7 @@
           allowfullscreen
         ></iframe>
       </div>
-     
+
       <div class="photolist">
         <div id="morepictures">
           more pictures
@@ -194,7 +215,7 @@
     </footer>
     <script>
       function morepictures() {
-        if ((document.getElementById("extrapic1").style.display === "inline")) {
+        if (document.getElementById("extrapic1").style.display === "inline") {
           document.getElementById("extrapic1").style.display = "none";
           document.getElementById("extrapic2").style.display = "none";
         } else {

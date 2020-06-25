@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>City of God</title>
+    <meta
+      name="description"
+      content="the film collection is a collection of my favorite films. The goal of the site is to provide a little bit a visual teaser of each film to promote it."
+    />
+    <meta
+      name="keywords"
+      content="movie,movies,film,films,La Haine,Snatch,City of God"
+    />
+    <meta name="author" content="Nic Cort" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
     <link rel="stylesheet" href="footer.css" />
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
     />
     <style>
-      #bigpic {
+      .bigpic {
         max-width: 1400px;
         display: block;
         margin-left: auto;
@@ -23,6 +32,63 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+      }
+      table {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      td {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .wtw {
+        /* border: 1px solid white; */
+        border-radius: 5px;
+      }
+      .wtw:hover {
+        background-color: rgb(57, 57, 57);
+      }
+      #waystowatch {
+        text-align: center;
+      }
+      .photolist {
+        text-align: center;
+      }
+      .extrapic {
+        width: 1400px;
+        display: none;
+      }
+      .filmtitle {
+        font-family: Playfair Display;
+        font-style: italic;
+      }
+      .heading {
+        border-bottom: 1px solid rgb(57, 57, 57);
+      }
+      #morepictures {
+        margin: 10px auto 10px auto;
+        width: 150px;
+        border: 1px solid white;
+      }
+      #morepictures:hover {
+        background-color: rgb(57, 57, 57);
+        cursor: pointer;
+      }
+      #trailer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      td a:hover {
+        background-color: rgb(57, 57, 57);
+        border-radius: 5px;
+      }
+      #purchase {
+        font-size: 10px;
+      }
+      #purchase:hover {
+        background-color: rgb(57, 57, 57);
+        border-radius: 5px;
       }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -47,10 +113,11 @@
         <div class="dropdownlinks">
           <a href="movies.html">movies</a>
           <a href="contact.html">contact</a>
+          <a href="credits.html">credits</a>
         </div>
       </div>
       <div class="title">
-        <h1><a href="index.html">the movie place</a></h1>
+        <h1><a href="index.html">the film collection</a></h1>
       </div>
       <div class="contact">
         <a href="contact.html"><button>contact</button></a>
@@ -58,58 +125,105 @@
     </header>
     <section class="body">
       <div>
-        <h1>City of God</h1>
-      </div>
-      <div>
         <img
-          id="bigpic"
+          class="bigpic"
           src="images/cityofgod.jpg"
           alt="City of God"
           title="City of God"
         />
       </div>
       <div>
+        <h1 class="heading">
+          <span class="filmtitle">City of God </span
+          ><span id="purchase"
+            ><a
+              target="_blank"
+              href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.7ea9f752-cbc0-b4c8-38cf-4f9d3147ad3e?ref_=imdbref_tt_wbr_pvt_aiv&tag=imdbtag_tt_wbr_pvt_aiv-20"
+              >Purchase on Amazon</a
+            ></span
+          >
+        </h1>
+      </div>
+      <div>
         Categories: Crime, Drama
       </div>
-      <table>
-        <tr>
-          <td></td>
-          <td>IMDB</td>
-          <td>Rotten Tomatoes Critic</td>
-          <td>Rotten Tomatoes Audience</td>
-        </tr>
-        <tr>
-          <td>Rating</td>
-          <td>8.6/10</td>
-          <td>91%</td>
-          <td>97%</td>
-        </tr>
-      </table>
       <div>
-        <div>
-          Ways to watch:
-        </div>
-        <div>
-          <a
-            href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.7ea9f752-cbc0-b4c8-38cf-4f9d3147ad3e?ref_=imdbref_tt_wbr_pvt_aiv&tag=imdbtag_tt_wbr_pvt_aiv-20"
-            target="_blank"
-            >Purchase on Amazon</a
-          >
-        </div>
+        <table>
+          <tr>
+            <td>
+              <a target="_blank" href="https://www.imdb.com/title/tt0317248/"
+                >IMDB</a
+              >
+            </td>
+            <td>
+              <a
+                target="_blank"
+                href="https://www.rottentomatoes.com/m/city_of_god"
+                >Rotten Tomatoes Critic</a
+              >
+            </td>
+            <td>
+              <a
+                target="_blank"
+                href="https://www.rottentomatoes.com/m/city_of_god"
+                >Rotten Tomatoes Audience</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>8.6/10</td>
+            <td>91%</td>
+            <td>97%</td>
+          </tr>
+        </table>
       </div>
-      <div>
+      <div id="trailer">
         <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/dcUOO4Itgmw"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dcUOO4Itgmw"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      </div>
+
+      <div class="photolist">
+        <div id="morepictures">
+          more pictures
+        </div>
+        <div id="extrapics">
+          <img
+            id="extrapic1"
+            class="extrapic"
+            src="images/cityofgod2.jpg"
+            alt="City of God"
+            title="City of God"
+          />
+          <img
+            id="extrapic2"
+            class="extrapic"
+            src="images/cityofgod3.jpg"
+            alt="City of God"
+            title="City of God"
+          />
+        </div>
       </div>
     </section>
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>
+    <script>
+      function morepictures() {
+        if (document.getElementById("extrapic1").style.display === "inline") {
+          document.getElementById("extrapic1").style.display = "none";
+          document.getElementById("extrapic2").style.display = "none";
+        } else {
+          document.getElementById("extrapic1").style.display = "inline";
+          document.getElementById("extrapic2").style.display = "inline";
+        }
+      }
+      document.getElementById("morepictures").onclick = morepictures;
+    </script>
   </body>
 </html>

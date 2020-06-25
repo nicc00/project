@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snatch</title>
+    <meta
+      name="description"
+      content="the film collection is a collection of my favorite films. The goal of the site is to provide a little bit a visual teaser of each film to promote it."
+    />
+    <meta
+      name="keywords"
+      content="movie,movies,film,films,La Haine,Snatch,City of God"
+    />
+    <meta name="author" content="Nic Cort" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
     <link rel="stylesheet" href="footer.css" />
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
     />
     <style>
-      #bigpic {
+      .bigpic {
         max-width: 1400px;
         display: block;
         margin-left: auto;
@@ -23,6 +32,63 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+      }
+      table {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      td {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .wtw {
+        /* border: 1px solid white; */
+        border-radius: 5px;
+      }
+      .wtw:hover {
+        background-color: rgb(57, 57, 57);
+      }
+      #waystowatch {
+        text-align: center;
+      }
+      .photolist {
+        text-align: center;
+      }
+      .extrapic {
+        width: 1400px;
+        display: none;
+      }
+      .filmtitle {
+        font-family: Playfair Display;
+        font-style: italic;
+      }
+      .heading {
+        border-bottom: 1px solid rgb(57, 57, 57);
+      }
+      #morepictures {
+        margin: 10px auto 10px auto;
+        width: 150px;
+        border: 1px solid white;
+      }
+      #morepictures:hover {
+        background-color: rgb(57, 57, 57);
+        cursor: pointer;
+      }
+      #trailer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      td a:hover {
+        background-color: rgb(57, 57, 57);
+        border-radius: 5px;
+      }
+      #purchase {
+        font-size: 10px;
+      }
+      #purchase:hover {
+        background-color: rgb(57, 57, 57);
+        border-radius: 5px;
       }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -47,10 +113,11 @@
         <div class="dropdownlinks">
           <a href="movies.html">movies</a>
           <a href="contact.html">contact</a>
+          <a href="credits.html">credits</a>
         </div>
       </div>
       <div class="title">
-        <h1><a href="index.html">the movie place</a></h1>
+        <h1><a href="index.html">the film collection</a></h1>
       </div>
       <div class="contact">
         <a href="contact.html"><button>contact</button></a>
@@ -58,41 +125,59 @@
     </header>
     <section class="body">
       <div>
-        <h1>Snatch</h1>
+        <img
+          class="bigpic"
+          src="images/snatch.jpeg"
+          alt="Snatch"
+          title="Snatch"
+        />
       </div>
       <div>
-        <img id="bigpic" src="images/snatch.jpeg" alt="Snatch" title="Snatch" />
+        <h1 class="heading">
+          <span class="filmtitle">Snatch </span
+          ><span id="purchase"
+            ><a
+              target="_blank"
+              href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.aca9f76e-1df8-f9e8-b634-6feaa3b491b3?ref_=imdbref_tt_wbr_pvc_starzSub&tag=imdbtag_tt_wbr_pvc_starzSub-20"
+              >Purchase on Amazon</a
+            ></span
+          >
+        </h1>
       </div>
       <div>
         Categories: Comedy, Crime
       </div>
-      <table>
-        <tr>
-          <td></td>
-          <td>IMDB</td>
-          <td>Rotten Tomatoes Critic</td>
-          <td>Rotten Tomatoes Audience</td>
-        </tr>
-        <tr>
-          <td>Rating</td>
-          <td>8.3/10</td>
-          <td>73%</td>
-          <td>93%</td>
-        </tr>
-      </table>
       <div>
-        <div>
-          Ways to watch:
-        </div>
-        <div>
-          <a
-            href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.aca9f76e-1df8-f9e8-b634-6feaa3b491b3?ref_=imdbref_tt_wbr_pvc_starzSub&tag=imdbtag_tt_wbr_pvc_starzSub-20"
-            target="_blank"
-            >Purchase on Amazon</a
-          >
-        </div>
+        <table>
+          <tr>
+            <td>
+              <a target="_blank" href="https://www.imdb.com/title/tt0208092/"
+                >IMDB</a
+              >
+            </td>
+            <td>
+              <a
+                target="_blank"
+                href="https://www.rottentomatoes.com/m/snatch"
+                >Rotten Tomatoes Critic</a
+              >
+            </td>
+            <td>
+              <a
+                target="_blank"
+                href="https://www.rottentomatoes.com/m/snatch"
+                >Rotten Tomatoes Audience</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>8.3/10</td>
+            <td>73%</td>
+            <td>93%</td>
+          </tr>
+        </table>
       </div>
-      <div>
+      <div id="trailer">
         <iframe
           width="560"
           height="315"
@@ -102,9 +187,43 @@
           allowfullscreen
         ></iframe>
       </div>
+
+      <div class="photolist">
+        <div id="morepictures">
+          more pictures
+        </div>
+        <div id="extrapics">
+          <img
+            id="extrapic1"
+            class="extrapic"
+            src="images/snatch2.jpg"
+            alt="Snatch"
+            title="Snatch"
+          />
+          <img
+            id="extrapic2"
+            class="extrapic"
+            src="images/snatch3.jpg"
+            alt="Snatch"
+            title="Snatch"
+          />
+        </div>
+      </div>
     </section>
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>
+    <script>
+      function morepictures() {
+        if (document.getElementById("extrapic1").style.display === "inline") {
+          document.getElementById("extrapic1").style.display = "none";
+          document.getElementById("extrapic2").style.display = "none";
+        } else {
+          document.getElementById("extrapic1").style.display = "inline";
+          document.getElementById("extrapic2").style.display = "inline";
+        }
+      }
+      document.getElementById("morepictures").onclick = morepictures;
+    </script>
   </body>
 </html>
