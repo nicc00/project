@@ -207,6 +207,20 @@
             alt="Snatch"
             title="Snatch"
           />
+          <img
+          id="extrapic3"
+          class="extrapic"
+          src="images/snatch4.jpg"
+          alt="Snatch"
+          title="Snatch"
+        />
+        <img
+        id="extrapic4"
+        class="extrapic"
+        src="images/snatch5.jpg"
+        alt="Snatch"
+        title="Snatch"
+      />
         </div>
       </div>
     </section>
@@ -218,9 +232,13 @@
         if (document.getElementById("extrapic1").style.display === "inline") {
           document.getElementById("extrapic1").style.display = "none";
           document.getElementById("extrapic2").style.display = "none";
+          document.getElementById("extrapic3").style.display = "none";
+          document.getElementById("extrapic4").style.display = "none";
         } else {
           document.getElementById("extrapic1").style.display = "inline";
           document.getElementById("extrapic2").style.display = "inline";
+          document.getElementById("extrapic3").style.display = "inline";
+          document.getElementById("extrapic4").style.display = "inline";
         }
       }
       document.getElementById("morepictures").onclick = morepictures;

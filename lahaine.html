@@ -207,6 +207,20 @@
             alt="La Haine"
             title="La Haine"
           />
+          <img
+          id="extrapic3"
+          class="extrapic"
+          src="images/lahaine5.jpg"
+          alt="La Haine"
+          title="La Haine"
+        />
+        <img
+        id="extrapic4"
+        class="extrapic"
+        src="images/lahaine6.jpg"
+        alt="La Haine"
+        title="La Haine"
+      />
         </div>
       </div>
     </section>
@@ -218,9 +232,13 @@
         if (document.getElementById("extrapic1").style.display === "inline") {
           document.getElementById("extrapic1").style.display = "none";
           document.getElementById("extrapic2").style.display = "none";
+          document.getElementById("extrapic3").style.display = "none";
+          document.getElementById("extrapic4").style.display = "none";
         } else {
           document.getElementById("extrapic1").style.display = "inline";
           document.getElementById("extrapic2").style.display = "inline";
+          document.getElementById("extrapic3").style.display = "inline";
+          document.getElementById("extrapic4").style.display = "inline";
         }
       }
       document.getElementById("morepictures").onclick = morepictures;
