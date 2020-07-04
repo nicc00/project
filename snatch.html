@@ -24,10 +24,14 @@
     />
     <style>
       .bigpic {
-        max-width: 1400px;
+        max-width: 100%;
+        height: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
+      }
+      #bigpicdiv{
+        max-width: 1400px;
       }
       iframe {
         display: block;
@@ -57,10 +61,12 @@
         text-align: center;
       }
       .extrapic {
-        width: 1400px;
+        max-width: 100%;
+        height: auto;
       }
       #extrapics{
         display: none;
+        max-width: 1400px;
       }
       .filmtitle {
         font-family: Playfair Display;
@@ -126,7 +132,7 @@
       </div>
     </header>
     <section class="body">
-      <div>
+      <div id="bigpicdiv">
         <img
           class="bigpic"
           src="images/snatch.jpeg"
