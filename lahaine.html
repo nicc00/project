@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
     <link rel="stylesheet" href="footer.css" />
-
+    <link rel="stylesheet" href="slideshow.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
@@ -59,32 +59,12 @@
       #waystowatch {
         text-align: center;
       }
-      .photolist {
-        text-align: center;
-      }
-      .extrapic {
-        max-width: 100%;
-        height: auto;
-      }
-      #extrapics {
-        display: none;
-        max-width: 1400px;
-      }
       .filmtitle {
         font-family: Playfair Display;
         font-style: italic;
       }
       .heading {
         border-bottom: 1px solid rgb(57, 57, 57);
-      }
-      #morepictures {
-        margin: 10px auto 10px auto;
-        width: 150px;
-        border: 1px solid white;
-      }
-      #morepictures:hover {
-        background-color: rgb(57, 57, 57);
-        cursor: pointer;
       }
       #trailer {
         margin-top: 20px;
@@ -202,55 +182,24 @@
         ></iframe>
       </div>
 
-      <div class="photolist">
-        <div id="morepictures">
-          more pictures
-        </div>
-        <div id="extrapics">
-          <img
-            id="extrapic1"
-            class="extrapic"
-            src="images/lahaine3.jpeg"
-            alt="La Haine"
-            title="La Haine"
-          />
-          <img
-            id="extrapic2"
-            class="extrapic"
-            src="images/lahaine4.jpg"
-            alt="La Haine"
-            title="La Haine"
-          />
-          <img
-          id="extrapic3"
+      <div id="morePictures">
+        more pictures
+      </div>
+      <div id="slideshow">
+        <img
+          id="currentSlide"
           class="extrapic"
-          src="images/lahaine5.jpg"
+          src="images/lahaine3.jpeg"
           alt="La Haine"
           title="La Haine"
         />
-        <img
-        id="extrapic4"
-        class="extrapic"
-        src="images/lahaine6.jpg"
-        alt="La Haine"
-        title="La Haine"
-      />
-        </div>
+        <div id="next">></div>
+        <div id="previous"><</div>
       </div>
     </section>
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>
-    <script>
-      function morepictures() {
-        if (document.getElementById("extrapics").style.display === "block") {
-          document.getElementById("extrapics").style.display = "none";
-        }
-        else {
-          document.getElementById("extrapics").style.display = "block";
-        }
-      }
-      document.getElementById("morepictures").onclick = morepictures;
-    </script>
+    <script src="slideshow.js"></script>
   </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Haine</title>
+    <meta
+      name="description"
+      content="the film collection is a collection of my favorite films. The goal of the site is to provide a little bit a visual teaser of each film to promote it."
+    />
+    <meta
+      name="keywords"
+      content="movie,movies,film,films,La Haine,Snatch,City of God"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta name="author" content="Nic Cort" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="slideshow.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
+    />  
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1><a href="index.html">the film collection</a></h1>
+      </div>
+      <div class="nav">
+        <div class="dropdown">
+          <button class="dropdownbutton">more</button>
+          <div class="dropdownlinks">
+            <a href="movies.html">movies</a>
+            <a href="contact.html">contact</a>
+            <a href="credits.html">credits</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="body">
+        <div id="morePictures">
+          more pictures
+        </div>
+        <div id="slideshow">
+          <img
+            id="currentSlide"
+            class="extrapic"
+            src="images/lahaine3.jpeg"
+            alt="La Haine"
+            title="La Haine"
+          />
+          <div id="next">></div>
+          <div id="previous"><</div>
+        </div>
+    </section>
+    <footer>
+      <a href="sitemap.html">site map</a>
+    </footer>
+    <script src="slideshow.js"></script>
+  </body>
+</html>
