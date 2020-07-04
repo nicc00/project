@@ -58,6 +58,19 @@
       img:hover {
         transform: scale(1.05);
       }
+      #search{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      #search input{
+        background-color: transparent;
+        border-bottom: 1px white solid;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        color: white;
+        outline: none;
+      }
     </style>
   </head>
   <body>
@@ -77,9 +90,8 @@
       </div>
     </header>
     <section class="body">
-      <div>
-        <label for="input">search</label>
-        <input id="input" type="text" name="input">
+      <div id="search">
+        <input id="input" type="text" name="input" placeholder="search for a film">
       </div>
       <div>
         <table id="posterlist">
