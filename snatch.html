@@ -58,6 +58,8 @@
       }
       .extrapic {
         width: 1400px;
+      }
+      #extrapics{
         display: none;
       }
       .filmtitle {
@@ -229,16 +231,11 @@
     </footer>
     <script>
       function morepictures() {
-        if (document.getElementById("extrapic1").style.display === "inline") {
-          document.getElementById("extrapic1").style.display = "none";
-          document.getElementById("extrapic2").style.display = "none";
-          document.getElementById("extrapic3").style.display = "none";
-          document.getElementById("extrapic4").style.display = "none";
-        } else {
-          document.getElementById("extrapic1").style.display = "inline";
-          document.getElementById("extrapic2").style.display = "inline";
-          document.getElementById("extrapic3").style.display = "inline";
-          document.getElementById("extrapic4").style.display = "inline";
+        if (document.getElementById("extrapics").style.display === "block") {
+          document.getElementById("extrapics").style.display = "none";
+        }
+        else {
+          document.getElementById("extrapics").style.display = "block";
         }
       }
       document.getElementById("morepictures").onclick = morepictures;
