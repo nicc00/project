@@ -12,12 +12,12 @@
       name="keywords"
       content="movie,movies,film,films,La Haine,Snatch,City of God"
     />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <meta name="author" content="Nic Cort" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="slideshow.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
@@ -30,7 +30,7 @@
         margin-left: auto;
         margin-right: auto;
       }
-      #bigpicdiv{
+      #bigpicdiv {
         max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
@@ -81,7 +81,7 @@
         background-color: rgb(57, 57, 57);
         border-radius: 5px;
       }
-      iframe{
+      iframe {
         max-width: 100%;
         max-height: 100%;
       }
@@ -188,7 +188,6 @@
       <div id="slideshow">
         <img
           id="currentSlide"
-          class="extrapic"
           src="images/lahaine3.jpeg"
           alt="La Haine"
           title="La Haine"
@@ -200,6 +199,14 @@
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>
+    <script>
+      const slides = [
+        "images/lahaine3.jpeg",
+        "images/lahaine4.jpg",
+        "images/lahaine5.jpg",
+        "images/lahaine6.jpg",
+      ];
+    </script>
     <script src="slideshow.js"></script>
   </body>
 </html>

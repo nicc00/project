@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="slideshow.css">
 
     <link
       rel="stylesheet"
@@ -59,34 +60,12 @@
       #waystowatch {
         text-align: center;
       }
-      .photolist {
-        text-align: center;
-      }
-      .extrapic {
-        max-width: 100%;
-        height: auto;
-      }
-      #extrapics{
-        display: none;
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-      }
       .filmtitle {
         font-family: Playfair Display;
         font-style: italic;
       }
       .heading {
         border-bottom: 1px solid rgb(57, 57, 57);
-      }
-      #morepictures {
-        margin: 10px auto 10px auto;
-        width: 150px;
-        border: 1px solid white;
-      }
-      #morepictures:hover {
-        background-color: rgb(57, 57, 57);
-        cursor: pointer;
       }
       #trailer {
         margin-top: 20px;
@@ -204,69 +183,34 @@
         ></iframe>
       </div>
 
-      <div class="photolist">
-        <div id="morepictures">
-          more pictures
-        </div>
-        <div id="extrapics">
-          <img
-            id="extrapic1"
-            class="extrapic"
-            src="images/cityofgod2.jpg"
-            alt="City of God"
-            title="City of God"
-          />
-          <img
-            id="extrapic2"
-            class="extrapic"
-            src="images/cityofgod3.jpg"
-            alt="City of God"
-            title="City of God"
-          />
-          <img
-            id="extrapic3"
-            class="extrapic"
-            src="images/cityofgod4.jpg"
-            alt="City of God"
-            title="City of God"
-          />
-          <img
-            id="extrapic4"
-            class="extrapic"
-            src="images/cityofgod5.jpg"
-            alt="City of God"
-            title="City of God"
-          />
-          <img
-            id="extrapic5"
-            class="extrapic"
-            src="images/cityofgod6.jpg"
-            alt="City of God"
-            title="City of God"
-          />
-          <img
-            id="extrapic6"
-            class="extrapic"
-            src="images/cityofgod7.jpg"
-            alt="City of God"
-            title="City of God"
-          />
-        </div>
+      <div id="morePictures">
+        more pictures
+      </div>
+      <div id="slideshow">
+        <img
+          id="currentSlide"
+          src="images/cityofgod2.jpg"
+          alt="City of God"
+          title="City of God"
+        />
+        <div id="next">></div>
+        <div id="previous"><</div>
       </div>
     </section>
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>
     <script>
-      function morepictures() {
-        if (document.getElementById("extrapics").style.display === "block") {
-          document.getElementById("extrapics").style.display = "none";
-        }
-        else {
-          document.getElementById("extrapics").style.display = "block";
-        }
-      }
-      document.getElementById("morepictures").onclick = morepictures;
-    </script>
+      const slides = [
+     "images/cityofgod2.jpg",
+     "images/cityofgod3.jpg",
+     "images/cityofgod4.jpg",
+     "images/cityofgod5.jpg",
+     "images/cityofgod6.jpg",
+     "images/cityofgod7.jpg",
+   ];
+ </script>
+      <script src="slideshow.js"></script>
+
   </body>
 </html>

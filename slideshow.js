@@ -1,10 +1,4 @@
 const currentSlide = document.getElementById("currentSlide");
-const slides = [
-  "images/lahaine3.jpeg",
-  "images/lahaine4.jpg",
-  "images/lahaine5.jpg",
-  "images/lahaine6.jpg",
-];
 let slide = 0;
 let next = document.getElementById("next");
 let previous = document.getElementById("previous");

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="body.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="slideshow.css">
 
     <link
       rel="stylesheet"
@@ -59,34 +60,12 @@
       #waystowatch {
         text-align: center;
       }
-      .photolist {
-        text-align: center;
-      }
-      .extrapic {
-        max-width: 100%;
-        height: auto;
-      }
-      #extrapics{
-        display: none;
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-      }
       .filmtitle {
         font-family: Playfair Display;
         font-style: italic;
       }
       .heading {
         border-bottom: 1px solid rgb(57, 57, 57);
-      }
-      #morepictures {
-        margin: 10px auto 10px auto;
-        width: 150px;
-        border: 1px solid white;
-      }
-      #morepictures:hover {
-        background-color: rgb(57, 57, 57);
-        cursor: pointer;
       }
       #trailer {
         margin-top: 20px;
@@ -204,55 +183,31 @@
         ></iframe>
       </div>
 
-      <div class="photolist">
-        <div id="morepictures">
-          more pictures
-        </div>
-        <div id="extrapics">
-          <img
-            id="extrapic1"
-            class="extrapic"
-            src="images/snatch2.jpg"
-            alt="Snatch"
-            title="Snatch"
-          />
-          <img
-            id="extrapic2"
-            class="extrapic"
-            src="images/snatch3.jpg"
-            alt="Snatch"
-            title="Snatch"
-          />
-          <img
-          id="extrapic3"
-          class="extrapic"
-          src="images/snatch4.jpg"
+      <div id="morePictures">
+        more pictures
+      </div>
+      <div id="slideshow">
+        <img
+          id="currentSlide"
+          src="images/snatch2.jpg"
           alt="Snatch"
           title="Snatch"
         />
-        <img
-        id="extrapic4"
-        class="extrapic"
-        src="images/snatch5.jpg"
-        alt="Snatch"
-        title="Snatch"
-      />
-        </div>
+        <div id="next">></div>
+        <div id="previous"><</div>
       </div>
     </section>
     <footer>
       <a href="sitemap.html">site map</a>
     </footer>
     <script>
-      function morepictures() {
-        if (document.getElementById("extrapics").style.display === "block") {
-          document.getElementById("extrapics").style.display = "none";
-        }
-        else {
-          document.getElementById("extrapics").style.display = "block";
-        }
-      }
-      document.getElementById("morepictures").onclick = morepictures;
+         const slides = [
+        "images/snatch2.jpg",
+        "images/snatch3.jpg",
+        "images/snatch4.jpg",
+        "images/snatch5.jpg",
+      ];
     </script>
+     <script src="slideshow.js"></script>
   </body>
 </html>
