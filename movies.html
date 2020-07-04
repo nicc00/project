@@ -36,7 +36,7 @@
       gtag("config", "UA-169802484-1");
     </script>
     <style>
-      #poster {
+      .poster {
         max-width: 200px;
         display: block;
       }
@@ -78,40 +78,47 @@
     </header>
     <section class="body">
       <div>
+        <label for="input">search</label>
+        <input id="input" type="text" name="input">
+      </div>
+      <div>
         <table id="posterlist">
           <tr>
-            <td><a href="lahaine.html"> La Haine</a></td>
+            <td><a  id="laHaine" href="lahaine.html">La Haine</a></td>
             <td>
               <a href="lahaine.html"
                 ><img
-                  id="poster"
+                  class="poster"
                   src="images/lahaineposter.jpg"
                   alt="La Haine poster"
                   title="La Haine"
+                  id="laHainePoster"
               /></a>
             </td>
           </tr>
           <tr>
-            <td><a href="snatch.html"> Snatch</a></td>
+            <td><a id="snatch" href="snatch.html"> Snatch</a></td>
             <td>
               <a href="snatch.html"
                 ><img
-                  id="poster"
+                  class="poster"
                   src="images/snatchposter.jpg"
                   alt="Snatch poster"
                   title="Snatch"
+                  id="snatchPoster"
               /></a>
             </td>
           </tr>
           <tr>
-            <td><a href="cityofgod.html"> City of God</a></td>
+            <td><a id="cityOfGod" href="cityofgod.html"> City of God</a></td>
             <td>
               <a href="cityofgod.html"
                 ><img
-                  id="poster"
+                  class="poster"
                   src="images/cityofgodposter.jpg"
                   alt="City of God poster"
                   title="City of God"
+                  id="cityOfGodPoster"
               /></a>
             </td>
           </tr>
@@ -128,4 +135,46 @@
       <a href="sitemap.html">site map</a>
     </footer>
   </body>
+  <script>
+    let laHaine = document.getElementById('laHaine').innerHTML.toLowerCase();
+    let snatch = document.getElementById('snatch').innerHTML.toLowerCase();
+    let cityOfGod = document.getElementById('cityOfGod').innerHTML.toLowerCase();
+
+    function search() {
+      let input =  (document.getElementById('input').value.toLowerCase());
+      if (laHaine.includes(input) === false) {
+        document.getElementById('laHainePoster').src = '';
+        document.getElementById('laHainePoster').alt = '';
+        document.getElementById('laHaine').innerHTML = '';
+      }
+      else {
+        document.getElementById('laHainePoster').src = 'images/lahaineposter.jpg';
+        document.getElementById('laHainePoster').alt = 'La Haine Poster';
+        document.getElementById('laHaine').innerHTML = 'La Haine';
+      }
+      if (snatch.includes(input) === false) {
+        document.getElementById('snatchPoster').src = '';
+        document.getElementById('snatchPoster').alt = '';
+        document.getElementById('snatch').innerHTML = '';
+      }
+      else {
+        document.getElementById('snatchPoster').src = 'images/snatchposter.jpg';
+        document.getElementById('snatchPoster').alt = 'Snatch Poster';
+        document.getElementById('snatch').innerHTML = 'Snatch';
+      }
+      if (cityOfGod.includes(input) === false) {
+        document.getElementById('cityOfGodPoster').src = '';
+        document.getElementById('cityOfGodPoster').alt = '';
+        document.getElementById('cityOfGod').innerHTML = '';
+      }
+      else {
+        document.getElementById('cityOfGodPoster').src = 'images/cityofgodposter.jpg';
+        document.getElementById('cityOfGodPoster').alt = 'City of God Poster';
+        document.getElementById('cityOfGod').innerHTML = 'City of God';
+      }
+     
+      
+    }
+    document.getElementById('input').onkeyup = search;
+  </script>
 </html>
