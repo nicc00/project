@@ -37,13 +37,8 @@
     </script>
     <style>
       .poster {
-        max-width: 200px;
-        display: block;
-      }
-      #posterlist {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        max-height: 500px;
+        border-radius: 5%;
       }
       form {
         margin-top: 20px;
@@ -52,17 +47,7 @@
         margin-left: auto;
         margin-right: auto;
       }
-      table a:hover {
-        text-decoration: underline;
-      }
-      img:hover {
-        transform: scale(1.05);
-      }
-      #search{
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      #search input{
+      #recommend{
         background-color: transparent;
         border-bottom: 1px white solid;
         border-left: 0;
@@ -70,6 +55,47 @@
         border-top: 0;
         color: white;
         outline: none;
+      }
+      table a:hover {
+        text-decoration: underline;
+      }
+      #search {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      #search input {
+        background-color: transparent;
+        border-bottom: 1px white solid;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        color: white;
+        outline: none;
+      }
+      .wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        width: 35%;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .wrapper::-webkit-scrollbar {
+          height: 5px;
+        }
+        .wrapper::-webkit-scrollbar-thumb {
+            background: white;
+            border-radius: 8px;
+        }
+        .wrapper::-webkit-scrollbar-track {
+            background: transparent;
+        }
+      .card {
+        display: inline-block;
+        margin-left: 50px;
+        margin-right: 50px;
       }
     </style>
   </head>
@@ -91,50 +117,44 @@
     </header>
     <section class="body">
       <div id="search">
-        <input id="input" type="text" name="input" placeholder="search for a film">
+        <input
+          id="input"
+          type="text"
+          name="input"
+          placeholder="search for a film"
+        />
       </div>
-      <div>
-        <table id="posterlist">
-          <tr>
-            <td><a  id="laHaine" href="lahaine.html">La Haine</a></td>
-            <td>
-              <a href="lahaine.html"
-                ><img
-                  class="poster"
-                  src="images/lahaineposter.jpg"
-                  alt="La Haine poster"
-                  title="La Haine"
-                  id="laHainePoster"
-              /></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a id="snatch" href="snatch.html"> Snatch</a></td>
-            <td>
-              <a href="snatch.html"
-                ><img
-                  class="poster"
-                  src="images/snatchposter.jpg"
-                  alt="Snatch poster"
-                  title="Snatch"
-                  id="snatchPoster"
-              /></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a id="cityOfGod" href="cityofgod.html"> City of God</a></td>
-            <td>
-              <a href="cityofgod.html"
-                ><img
-                  class="poster"
-                  src="images/cityofgodposter.jpg"
-                  alt="City of God poster"
-                  title="City of God"
-                  id="cityOfGodPoster"
-              /></a>
-            </td>
-          </tr>
-        </table>
+      <div class="wrapper">
+        <div class="card" id="laHaine">
+          <a href="lahaine.html"
+            ><img
+              class="poster"
+              src="images/lahaineposter.jpg"
+              alt="La Haine"
+              title="La Haine"
+              id="laHainePoster"
+          /></a>
+        </div>
+        <div class="card" id="snatch">
+          <a href="snatch.html"
+            ><img
+              class="poster"
+              src="images/snatchposter.jpg"
+              alt="Snatch"
+              title="Snatch"
+              id="snatchPoster"
+          /></a>
+        </div>
+        <div class="card" id="cityOfGod">
+          <a href="cityofgod.html"
+            ><img
+              class="poster"
+              src="images/cityofgodposter.jpg"
+              alt="City of God"
+              title="City of God"
+              id="cityOfGodPoster"
+          /></a>
+        </div>
       </div>
       <div>
         <form action="">
@@ -148,45 +168,32 @@
     </footer>
   </body>
   <script>
-    let laHaine = document.getElementById('laHaine').innerHTML.toLowerCase();
-    let snatch = document.getElementById('snatch').innerHTML.toLowerCase();
-    let cityOfGod = document.getElementById('cityOfGod').innerHTML.toLowerCase();
+    let laHaine = document.getElementById("laHaine");
+    let laHainePoster = document.getElementById("laHainePoster").title.toLowerCase();
+    let snatch = document.getElementById("snatch");
+    let snatchPoster = document.getElementById("snatchPoster").title.toLowerCase();
+    let cityOfGod = document.getElementById("cityOfGod");
+    let cityOfGodPoster = document.getElementById("cityOfGodPoster").title.toLowerCase();
+
 
     function search() {
-      let input =  (document.getElementById('input').value.toLowerCase());
-      if (laHaine.includes(input) === false) {
-        document.getElementById('laHainePoster').src = '';
-        document.getElementById('laHainePoster').alt = '';
-        document.getElementById('laHaine').innerHTML = '';
+      let input = document.getElementById("input").value.toLowerCase();
+      if (laHainePoster.includes(input) === false) {
+          laHaine.style.display = "none";
+      } else {
+          laHaine.style.display = "inline-block";
       }
-      else {
-        document.getElementById('laHainePoster').src = 'images/lahaineposter.jpg';
-        document.getElementById('laHainePoster').alt = 'La Haine Poster';
-        document.getElementById('laHaine').innerHTML = 'La Haine';
+      if (snatchPoster.includes(input) === false) {
+          snatch.style.display = "none";
+      } else {
+          snatch.style.display = "inline-block";
       }
-      if (snatch.includes(input) === false) {
-        document.getElementById('snatchPoster').src = '';
-        document.getElementById('snatchPoster').alt = '';
-        document.getElementById('snatch').innerHTML = '';
+      if (cityOfGodPoster.includes(input) === false) {
+          cityOfGod.style.display = "none";
+      } else {
+          cityOfGod.style.display = "inline-block";
       }
-      else {
-        document.getElementById('snatchPoster').src = 'images/snatchposter.jpg';
-        document.getElementById('snatchPoster').alt = 'Snatch Poster';
-        document.getElementById('snatch').innerHTML = 'Snatch';
-      }
-      if (cityOfGod.includes(input) === false) {
-        document.getElementById('cityOfGodPoster').src = '';
-        document.getElementById('cityOfGodPoster').alt = '';
-        document.getElementById('cityOfGod').innerHTML = '';
-      }
-      else {
-        document.getElementById('cityOfGodPoster').src = 'images/cityofgodposter.jpg';
-        document.getElementById('cityOfGodPoster').alt = 'City of God Poster';
-        document.getElementById('cityOfGod').innerHTML = 'City of God';
-      }
-     
-      
     }
-    document.getElementById('input').onkeyup = search;
+    document.getElementById("input").onkeyup = search;
   </script>
 </html>
