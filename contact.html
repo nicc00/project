@@ -117,4 +117,13 @@
     </footer>
   </body>
   <script src="header.js"></script>
+  <script>
+    let form = document.querySelector('form');
+    function validate() {
+      if (form['feedback'].value === "") {
+        alert('please enter your feedback')
+      }
+    }
+    document.getElementById('send').onclick = validate;
+  </script>
 </html>
