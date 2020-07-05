@@ -167,6 +167,16 @@
               id="cityOfGodPoster"
           /></a>
         </div>
+        <div class="card" id="oldboy">
+          <a href="oldboy.html"
+            ><img
+              class="poster"
+              src="images/oldboyposter.jpg"
+              alt="Oldboy"
+              title="Oldboy"
+              id="oldboyPoster"
+          /></a>
+        </div>
       </div>
       <div>
         <form action="">
@@ -186,6 +196,8 @@
     let snatchPoster = document.getElementById("snatchPoster").title.toLowerCase();
     let cityOfGod = document.getElementById("cityOfGod");
     let cityOfGodPoster = document.getElementById("cityOfGodPoster").title.toLowerCase();
+    let oldboy = document.getElementById("oldboy");
+    let oldboyPoster = document.getElementById("oldboyPoster").title.toLowerCase();
 
     function scroll() {
       document.querySelector('.wrapper').scrollLeft = "398"
@@ -208,6 +220,11 @@
           cityOfGod.style.display = "none";
       } else {
           cityOfGod.style.display = "inline-block";
+      }
+      if (oldboyPoster.includes(input) === false) {
+          oldboy.style.display = "none";
+      } else {
+          oldboy.style.display = "inline-block";
       }
     }
     document.getElementById("input").onkeyup = search;
