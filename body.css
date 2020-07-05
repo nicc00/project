@@ -12,3 +12,17 @@ a{
     margin-top: 90px;
     padding-bottom: 30px;
 }
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+      background: rgb(255, 255, 255, .3);
+      border-radius: 8px;
+  }
+  body::-webkit-scrollbar-thumb:hover {
+      background: white;
+      border-radius: 8px;
+  }
+  body::-webkit-scrollbar-track {
+      background: transparent;
+  }
