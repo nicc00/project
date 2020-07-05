@@ -2,39 +2,48 @@ header{
     height: 90px;
     position: fixed;
     top: 0;
-    background-color:rgb(0, 0, 0, .8);
+    background-color:rgb(30, 30, 30, .8);
     width: 100%;
     z-index: 1;
     display: flex;
 }
 .nav{
-    width: 250px;
     display: flex;
     position: absolute;
-    right: 0;
+    margin-left: 50px;
     height: 100%;
-    justify-content: center;
+    align-items: center;
 }
-.dropdown{
-    margin-top: auto;
-    margin-bottom: 21.44px;
 
-}
 .dropdownlinks{
     display: none;
     position: absolute;
     z-index: 5;
     background-color: transparent;
+    left: -25%;
+    text-align: center;
+}
+.dropdown:hover {
+    cursor: pointer;
 }
 .dropdownlinks a{
-    padding: 6px 8px;
+    padding-top: 8px;
     display: block;
     z-index: 5;
     font-family: Overpass;
 }
-.dropdown:hover .dropdownlinks{
-    display: block;
+.dropdownlinks a:hover{
+    color: gray;
 }
+.dropdown span{
+    display: block;
+    width: 33px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: white;
+    border-radius: 2px;
+    z-index: 1;
+  }
 .title{
     font-style: italic;
     font-family: Playfair Display;
@@ -59,12 +68,4 @@ header button{
     cursor: pointer;
     outline: none;
     font-family: Overpass;
-}
-@media only screen and (max-width: 680px) {
-    .title{
-        padding-left: 0px;
-    }
-    .nav{
-        width: 100px;
-    }
 }

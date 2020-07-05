@@ -2,40 +2,60 @@ header{
     height: 90px;
     position: fixed;
     top: 0;
-    background-color:rgb(0, 0, 0, .8);
+    background-color:rgb(30, 30, 30, .8);
     width: 100%;
     z-index: 1;
     display: flex;
 }
 .nav{
-    width: 200px;
     display: flex;
+    position: absolute;
+    margin-left: 50px;
+    height: 100%;
+    align-items: center;
 }
-.dropdown{
-    margin-top: auto;
-    margin-bottom: 21.44px;
 
-}
 .dropdownlinks{
     display: none;
     position: absolute;
     z-index: 5;
     background-color: transparent;
+    left: -25%;
+    text-align: center;
+}
+.dropdown:hover {
+    cursor: pointer;
 }
 .dropdownlinks a{
-    padding: 6px 8px;
+    padding-top: 8px;
     display: block;
     z-index: 5;
     font-family: Overpass;
 }
-.dropdown:hover .dropdownlinks{
-    display: block;
+.dropdownlinks a:hover{
+    color: gray;
 }
+.dropdown span{
+    display: block;
+    width: 33px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: white;
+    border-radius: 2px;
+    z-index: 1;
+  }
 .title{
     font-style: italic;
     font-family: Playfair Display;
-    padding-left: 200px;
-    margin: auto;
+    transition: font-size .1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+.title:hover{
+    font-size: 16.5px;
 }
 h1{
     font-weight: 50;
