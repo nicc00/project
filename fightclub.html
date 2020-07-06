@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fight Club</title>
+    <meta
+      name="description"
+      content="the film collection is a collection of my favorite films. The goal of the site is to provide a little bit a visual teaser of each film to promote it."
+    />
+    <meta
+      name="keywords"
+      content="movie,movies,film,films,La Haine,Snatch,City of God"
+    />
+    <meta name="author" content="Nic Cort" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="slideshow.css">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Overpass:100|Playfair+Display"
+    />
+    <style>
+      .bigpic {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #bigpicdiv{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      td {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .wtw {
+        /* border: 1px solid white; */
+        border-radius: 5px;
+      }
+      .wtw:hover {
+        background-color: rgb(57, 57, 57);
+      }
+      #waystowatch {
+        text-align: center;
+      }
+      .filmtitle {
+        font-family: Playfair Display;
+        font-style: italic;
+      }
+      .heading {
+        border-bottom: 1px solid rgb(57, 57, 57);
+      }
+      #trailer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      td a:hover {
+        background-color: rgb(57, 57, 57);
+        border-radius: 5px;
+      }
+      #purchase {
+        font-size: 10px;
+      }
+      #purchase:hover {
+        background-color: rgb(57, 57, 57);
+        border-radius: 5px;
+      }
+      iframe{
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169802484-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-169802484-1");
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1><a href="index.html">the film collection</a></h1>
+      </div>
+      <div class="nav">
+        <div class="dropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+          <div class="dropdownlinks">
+            <a href="movies.html">movies</a>
+            <a href="contact.html">contact</a>
+            <a href="credits.html">credits</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="body">
+      <div id="bigpicdiv">
+        <img
+          class="bigpic"
+          src="images/fightclub4.jpg"
+          alt="Snatch"
+          title="Snatch"
+        />
+      </div>
+      <div>
+        <h1 class="heading">
+          <span class="filmtitle">Fight Club </span
+          ><span id="purchase"
+            ><a
+              target="_blank"
+              href="https://www.amazon.com/Fight-Club-Brad-Pitt/dp/B001H1SVO8"
+              >Purchase on Amazon</a
+            ></span
+          >
+        </h1>
+      </div>
+      <div>
+        Categories: Drama
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <a target="_blank" href="https://www.imdb.com/title/tt0137523/?ref_=ttmi_tt"
+                >IMDB</a
+              >
+            </td>
+            <td>
+              <a
+                target="_blank"
+                href="https://www.rottentomatoes.com/m/fight_club"
+                >Rotten Tomatoes Critic</a
+              >
+            </td>
+            <td>
+              <a
+                target="_blank"
+                href="https://www.rottentomatoes.com/m/fight_club"
+                >Rotten Tomatoes Audience</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>8.8/10</td>
+            <td>79%</td>
+            <td>96%</td>
+          </tr>
+        </table>
+      </div>
+      <div id="trailer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qtRKdVHc-cE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div id="morePictures">
+        more pictures
+      </div>
+      <div id="slideshow">
+        <img
+          id="currentSlide"
+          src="images/fightclub.jpg"
+          alt="Fight Club"
+          title="Fight Club"
+        />
+        <div id="next">></div>
+        <div id="previous"><</div>
+      </div>
+    </section>
+    <footer>
+      <a href="sitemap.html">site map</a>
+    </footer>
+    <script>
+         const slides = [
+        "images/fightclub.jpg",
+        "images/fightclub2.jpg",
+        "images/fightclub3.jpg",
+      ];
+    </script>
+     <script src="slideshow.js"></script>
+  </body>
+  <script src="header.js"></script>
+</html>
