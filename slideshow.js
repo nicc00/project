@@ -12,7 +12,7 @@ function doSlideshow(n, a) {
     slide = slides.length - 1;
   }
   currentSlide.src = slides[slide];
-  if (a === 1) {
+  if (a === 1 ) {
       timer = setTimeout(function(){doSlideshow(1, 1);}, 3000)
   }
   else if (a === 2){

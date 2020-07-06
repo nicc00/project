@@ -62,7 +62,7 @@
         transform: scale(1.05);
         box-shadow: 0px 0px 300px -30px rgb(163, 124, 142);
       }
-      #ingloriousBasterdsPoster:hover{
+      #inglouriousBasterdsPoster:hover{
         transform: scale(1.05);
         box-shadow: 0px 0px 300px -30px rgb(157, 138, 121);
       }
@@ -215,9 +215,9 @@
             ><img
               class="poster"
               src="images/ingloriousbasterdsposter.jpg"
-              alt="Inglorious Basterds"
-              title="Inglorious Basterds"
-              id="ingloriousBasterdsPoster"
+              alt="Inglourious Basterds"
+              title="Inglourious Basterds"
+              id="inglouriousBasterdsPoster"
           /></a>
         </div>
       </div>
@@ -243,8 +243,8 @@
     let oldboyPoster = document.getElementById("oldboyPoster").title.toLowerCase();
     let fightClub = document.getElementById("fightClub");
     let fightClubPoster = document.getElementById("fightClubPoster").title.toLowerCase();
-    let ingloriousBasterds = document.getElementById("ingloriousBasterds");
-    let ingloriousBasterdsPoster = document.getElementById("ingloriousBasterdsPoster").title.toLowerCase();
+    let inglouriousBasterds = document.getElementById("inglouriousBasterds");
+    let inglouriousBasterdsPoster = document.getElementById("inglouriousBasterdsPoster").title.toLowerCase();
 
     function scroll() {
       document.querySelector('.wrapper').scrollLeft = "500"
@@ -278,10 +278,10 @@
       } else {
           fightClub.style.display = "inline-block";
       }
-      if (ingloriousBasterdsPoster.includes(input) === false) {
-          ingloriousBasterds.style.display = "none";
+      if (inglouriousBasterdsPoster.includes(input) === false) {
+          inglouriousBasterds.style.display = "none";
       } else {
-          ingloriousBasterds.style.display = "inline-block";
+          inglouriousBasterds.style.display = "inline-block";
       }
     }
     document.getElementById("input").onkeyup = search;
