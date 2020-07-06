@@ -103,10 +103,11 @@
         overflow-y: hidden;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        width: 60%;
+        width: 100%;
         margin: auto;
         padding-top: 50px;
         padding-bottom: 50px;
+        display: flex;
       }
       .wrapper::-webkit-scrollbar {
           height: 5px;
@@ -126,6 +127,8 @@
         display: inline-block;
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
       }
     </style>
   </head>
@@ -244,7 +247,7 @@
     let ingloriousBasterdsPoster = document.getElementById("ingloriousBasterdsPoster").title.toLowerCase();
 
     function scroll() {
-      document.querySelector('.wrapper').scrollLeft = "398"
+      document.querySelector('.wrapper').scrollLeft = "500"
     }
     document.querySelector('body').onload = scroll;
 
