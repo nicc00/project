@@ -42,6 +42,8 @@
         height: auto;
         margin-bottom: 10px;
         transition: transform 0.6s;
+        border: 2px white solid;
+        border-radius: 3px;
       }
       img:hover {
         transform: scale(1.01);
@@ -81,6 +83,50 @@
         margin-left: auto;
         margin-right: auto;
       }
+      .search{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    margin-right: 50px;
+}
+.circle{
+    /* width: 20px;
+    height: 20px; */
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+.line{
+    position: absolute;
+    width: 8px;
+    transform: rotate(45deg);
+    border: 1px solid white;
+    /* bottom: 30px;
+    right: 22px;     */
+    bottom: 36px;
+    right: 32px;  
+
+}
+#searchBar{
+    position: absolute;
+    left: -155%;
+    background-color: transparent;
+    border-bottom: 1px white solid;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    color: white;
+    outline: none;
+}
+.searchButton:hover{
+    cursor: pointer;
+}
     </style>
   </head>
   <body>
@@ -100,6 +146,21 @@
           </div>
         </div>
       </div>
+      <div class="searchwrapper">
+        
+      <div class="search">
+        <label class="searchButton" for="searchBar">
+          <div class="circle"></div>
+          <div class="line"></div>
+        </label>
+        <input
+          id="searchBar"
+          type="text"
+          name="search"
+        />
+        
+      </div>
+    </div>
     </header>
     <section class="body">
       <div id="homepageimages">
@@ -128,8 +189,8 @@
           ><img
             id="oldboy"
             src="images/oldboy4.jpg"
-            alt="City of God"
-            title="City of God"
+            alt="Oldboy"
+            title="Oldboy"
         /></a>
         <a href="fightclub.html"
           ><img
@@ -152,4 +213,47 @@
     </footer>
   </body>
   <script src="header.js"></script>
+  <script>
+    let laHaine = document.getElementById("laHaine");
+    let snatch = document.getElementById("snatch");
+    let cityOfGod = document.getElementById("cityOfGod");
+    let oldboy = document.getElementById("oldboy");
+    let fightClub = document.getElementById("fightClub");
+    let inglouriousBasterds = document.getElementById("inglouriousBasterds");
+
+    function search() {
+      let input = document.getElementById("searchBar").value.toLowerCase();
+      if (laHaine.title.toLowerCase().includes(input) === false) {
+          laHaine.style.display = "none";
+      } else {
+          laHaine.style.display = "inline-block";
+      }
+      if (snatch.title.toLowerCase().includes(input) === false) {
+          snatch.style.display = "none";
+      } else {
+          snatch.style.display = "inline-block";
+      }
+      if (cityOfGod.title.toLowerCase().includes(input) === false) {
+          cityOfGod.style.display = "none";
+      } else {
+          cityOfGod.style.display = "inline-block";
+      }
+      if (oldboy.title.toLowerCase().includes(input) === false) {
+          oldboy.style.display = "none";
+      } else {
+          oldboy.style.display = "inline-block";
+      }
+      if (fightClub.title.toLowerCase().includes(input) === false) {
+          fightClub.style.display = "none";
+      } else {
+          fightClub.style.display = "inline-block";
+      }
+      if (inglouriousBasterds.title.toLowerCase().includes(input) === false) {
+          inglouriousBasterds.style.display = "none";
+      } else {
+          inglouriousBasterds.style.display = "inline-block";
+      }
+    }
+    document.getElementById("searchBar").onkeyup = search;
+  </script>
 </html>

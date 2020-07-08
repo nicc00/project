@@ -81,3 +81,47 @@ header button{
         font-size:10.5px;
     }
 }
+.search{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    margin-right: 50px;
+}
+.circle{
+    /* width: 20px;
+    height: 20px; */
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+.line{
+    position: absolute;
+    width: 8px;
+    transform: rotate(45deg);
+    border: 1px solid white;
+    /* bottom: 30px;
+    right: 22px;     */
+    bottom: 36px;
+    right: 32px;  
+
+}
+#searchBar{
+    position: absolute;
+    left: -155%;
+    background-color: transparent;
+    border-bottom: 1px white solid;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    color: white;
+    outline: none;
+}
+.searchButton:hover{
+    cursor: pointer;
+}
